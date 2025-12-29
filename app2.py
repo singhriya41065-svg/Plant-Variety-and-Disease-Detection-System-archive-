@@ -1,3 +1,5 @@
+import os
+os.environ["OPENCV_LOG_LEVEL"] = "ERROR"
 import streamlit as st
 import cv2
 import numpy as np
@@ -170,3 +172,4 @@ elif mode == "Camera":
         stframe.image(frame, channels="BGR", width=700)
 
     cap.release()
+
